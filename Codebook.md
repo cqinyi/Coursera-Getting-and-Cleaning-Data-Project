@@ -6,7 +6,7 @@ RUN_ANALYSIS.R
 Dataset obtained from:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-Experiments were carried out on 30 volunteers who were strapped with a Samsung cellphone. They performed 6 activities (walking, walking downstairs, walking upstairs, standing, sitting and lying). 3-axial accelerometer and gyroscope signals were otained, filtered and transformed into 561 different features in the time and frequency domain. 
+Experiments were carried out on 30 volunteers who were strapped with a Samsung cellphone. They performed 6 activities (walking, walking downstairs, walking upstairs, standing, sitting and lying). 3-axial accelerometer and gyroscope signals were obtained, filtered and transformed into 561 different features in the time and frequency domain. 
 
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.

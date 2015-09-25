@@ -68,7 +68,7 @@ The obtained dataset was randomly partitioned into two sets, 70% as training dat
 - 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 - 'test/X_test.txt': Test set.
 - 'test/y_test.txt': Test labels.
-- 'test/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+- 'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 
 Other files are available in the data set, but are not used for the purpose of this exercise. (e.g. 'train/Inertial Signals/total_acc_x_train.txt')
 

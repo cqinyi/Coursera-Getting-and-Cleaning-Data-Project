@@ -72,7 +72,18 @@ The obtained dataset was randomly partitioned into two sets, 70% as training dat
 
 Other files are available in the data set, but are not used for the purpose of this exercise. (e.g. 'train/Inertial Signals/total_acc_x_train.txt')
 
-Subsequently, the 'run_analysis.r' code retained only the 'mean()' and 'std()' features (e.g. tBodyAcc-mean()-X was retained, but not gravityMean). The output tidy data file from 'run_analysis.r' consists only of the average of each retained feature for each activity and each subject
+Subsequently, running the 'run_analysis.r' code retained only the 'mean()' and 'std()' features (e.g. tBodyAcc-mean()-X was retained, but not gravityMean). Each row is identified by the following fields:
+- Subject: ranges from 1:30 and identifies the subject who performed the activity for each window sample
+- Activity: ranges from 1:6. Each corresponds to a different activity activity code which corresponds to an activity (see 'Activity Description' below)
+- Activity Description: descriptive label for each activity code
+    - 1: Walking
+    - 2: Walking Upstairs
+    - 3: Walking Downstairs
+    - 4: Sitting
+    - 5: Standing
+    - 6: Laying
+ 
+The output tidy data file from 'run_analysis.r' consists only of the average of each retained feature for each activity and each subject
 
 For more details on the data:
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012

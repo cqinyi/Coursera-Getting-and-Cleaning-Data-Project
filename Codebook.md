@@ -1,7 +1,7 @@
 # Coursera-Getting-and-Cleaning-Data-Project
 Project for Coursera course on getting and cleaning data
 
-RUN_ANALYSIS.R 
+This codebook provide information about variables in the dataset used by 'run_analysis.r'
 
 Dataset obtained from:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 

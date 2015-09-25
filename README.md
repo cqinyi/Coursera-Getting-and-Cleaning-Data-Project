@@ -33,7 +33,6 @@ How to run this script:
 5. Run 'run_analysis.r' using the command: source('run_analysis.r')
 6. Output is a txt file titled 'tidydata.txt' with the average of each 'mean()' or 'std' feature for each activity and each subject
 7. 'tidydata.txt' can be read into R with the following commands if 'tidydata.txt' is placed in the R working directory:
-
-  dataread <- read.table('tidydata.txt', header = TRUE)
-  View(dataread)
+    dataread <- read.table('tidydata.txt', header = TRUE)
+    View(dataread)
 

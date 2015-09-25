@@ -2,15 +2,15 @@
 library(reshape2)
 
 #extract feature info: these will be the col names for the X test and train datasets
-feature <- read.table(".\\features.txt")
+feature <- read.table(".\\UCI HAR Dataset\\features.txt")
 
 #extract feature data test and train datasets
-dataX <- rbind(read.table(".\\test\\X_test.txt"), read.table(".\\train\\X_train.txt"))
+dataX <- rbind(read.table(".\\UCI HAR Dataset\\test\\X_test.txt"), read.table(".\\UCI HAR Dataset\\train\\X_train.txt"))
 
 #extract activity labels in test and train datasets
-dataY <- rbind(read.table(".\\test\\y_test.txt"), read.table(".\\train\\y_train.txt"))
+dataY <- rbind(read.table(".\\UCI HAR Dataset\\test\\y_test.txt"), read.table(".\\UCI HAR Dataset\\train\\y_train.txt"))
 #extract subject identifiers in test and train datasets
-dataS <- rbind(read.table(".\\test\\subject_test.txt"), read.table(".\\train\\subject_train.txt"))
+dataS <- rbind(read.table(".\\UCI HAR Dataset\\test\\subject_test.txt"), read.table(".\\UCI HAR Dataset\\train\\subject_train.txt"))
 
 #combine features, activity labels and subject identifiers into "data" datatable
 data <- dataX
@@ -26,7 +26,7 @@ data2["Subject"] <- dataS
 data2["Activity"]<- dataY
 
 #extract activity label
-actlabel <- read.table(".\\activity_labels.txt")
+actlabel <- read.table(".\\UCI HAR Dataset\\activity_labels.txt")
 x <- as.character(actlabel[,2])
 
 #add new col with descriptive activity label based on activity no. (e.g. 1 = WALKING)
@@ -41,3 +41,4 @@ data4 <- dcast(data3, Subject + Activity + ActivityDescription ~variable,mean)
 
 #create a data table text file
 write.table(data4,"tidydata.txt",row.names = FALSE)
+

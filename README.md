@@ -26,6 +26,7 @@ This README provides information about the script 'run_analysis.r' works.
 5. This dataframe is the melted into a long format. It is then recast as a tidy dataset with average of each retained feature for each activity and each subject.
 
 How to run this script:
+
 1. This code makes use of the "reshape2" R package. Pls install this package before running 'run_analysis.r'.
 
 2. Pls download dataset from: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip

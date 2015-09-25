@@ -27,11 +27,17 @@ This README provides information about the script 'run_analysis.r' works.
 
 How to run this script:
 1. This code makes use of the "reshape2" R package. Pls install this package before running 'run_analysis.r'.
+
 2. Pls download dataset from: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
 3. Unzip place and place unzipped 'UCI HAR Dataset' into R working directory.
+
 4. Download and place 'run_analysis.r' into R working directory
+
 5. Run 'run_analysis.r' using the command: source('run_analysis.r')
+
 6. Output is a txt file titled 'tidydata.txt' with the average of each 'mean()' or 'std' feature for each activity and each subject
+
 7. 'tidydata.txt' can be read into R with the following commands if 'tidydata.txt' is placed in the R working directory:
     dataread <- read.table('tidydata.txt', header = TRUE)
     View(dataread)
